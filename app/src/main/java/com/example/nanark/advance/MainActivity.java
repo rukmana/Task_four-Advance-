@@ -1,8 +1,11 @@
 package com.example.nanark.advance;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -69,20 +72,63 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+        Intent intent;
         int id = item.getItemId();
 
-        if (id == R.id.nav_dashboard) {
-            // Handle the camera action
-        } else if (id == R.id.nav_transaction) {
+        switch (id) {
 
-        } else if (id == R.id.nav_synchronize) {
+            case R.id.nav_dashboard: {
 
-        } else if (id == R.id.nav_exit) {
+                intent = new Intent(this, Activity_Dashboard.class);
+                startActivity(intent);
+                break;
+            }
 
+            case R.id.nav_transaction: {
+
+                intent = new Intent(this, Activity_Transaction.class);
+                startActivity(intent);
+                break;
+            }
+
+
+            case R.id.nav_synchronize: {
+
+            }
+
+            case R.id.nav_exit: {
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage(" Yakin Mau Keluar")
+                        .setCancelable(false)
+                        .setPositiveButton("Ya", new DialogInterface.OnClickListener(){
+
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                MainActivity.this.finish();
+                            }
+
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener(){
+
+
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                            }
+
+                        });
+                AlertDialog alert = builder.create();
+                alert.show();
+                break;
+
+            }
+        }
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+            return true;
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
 }
+
+

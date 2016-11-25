@@ -6,4 +6,13 @@
 
     <string name="action_settings">Settings</string>
     <string name="saya">Nana Rukmana</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="expenses">New Expenses</string>
+    <string name="des">Description</string>
+    <string name="amount">Amount</string>
+    <string name="add_ex">Add Expenses</string>
+    <string name="income">New Income</string>
+    <string name="add_in">Add Income</string>
+    <string name="balance">Balance :</string>
 </resources>

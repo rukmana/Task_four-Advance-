@@ -31,8 +31,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.nanark.advance.ItemListActivity" />
         </activity>
-        <activity android:name=".Activity_Transaction" />
-        <activity android:name=".Activity_Dashboard"></activity>
+        <activity android:name=".Activity_Transaction"
+        android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".Activity_Dashboard"
+            android:parentActivityName=".MainActivity"></activity>
+
     </application>
 
 </manifest>

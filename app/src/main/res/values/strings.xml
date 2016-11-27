@@ -15,4 +15,6 @@
     <string name="income">New Income</string>
     <string name="add_in">Add Income</string>
     <string name="balance">Balance :</string>
+    <string name="tv_ov_ex">Overview Expenses</string>
+    <string name="tv_ov_in">Overview Income</string>
 </resources>

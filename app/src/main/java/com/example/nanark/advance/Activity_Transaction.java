@@ -24,13 +24,13 @@ public class Activity_Transaction extends AppCompatActivity implements View.OnCl
         myDB = new DatabaseHelper(this);
 
 
-        description_ex = (EditText) findViewById(R.id.ed);
+        description_ex = (EditText) findViewById(R.id.edtex_des_ex);
 
-        amoun_ex = (EditText) findViewById(R.id.surname_txt);
+        amoun_ex = (EditText) findViewById(R.id.edtex_amo_ex);
 
 
 
-        add_expen = (Button) findViewById(R.id.send_btn);
+        add_expen = (Button) findViewById(R.id.btn_add_ex);
 
 
         add_expen.setOnClickListener(this);

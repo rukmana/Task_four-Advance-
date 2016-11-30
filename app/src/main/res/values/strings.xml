@@ -17,4 +17,22 @@
     <string name="balance">Balance :</string>
     <string name="tv_ov_ex">Overview Expenses</string>
     <string name="tv_ov_in">Overview Income</string>
+    <string name="date">Date</string>
+    <string name="total">Total</string>
+    <string name="save_success">Save data success</string>
+    <string name="save_failed">Save data failed</string>
+    <string name="currency">$</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="delete_success">Delete data success</string>
+    <string name="delete_failed">Delete data failed</string>
+    <string name="update_success">Update data success</string>
+    <string name="update_failed">Update data failed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Description</string>
+    <string name="amounth">Amounth</string>
+    <string name="update">Update</string>
+    <string name="delete">Deletet</string>
+    <string name="cancel">Cancel</string>
 </resources>

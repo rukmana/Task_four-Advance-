@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wmatch_hwrap"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_cardtrans"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:translationZ="5dp"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/wmatch_hmatch"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_date"
+        style="@style/wmatch_hmatch"
+        android:layout_weight="1"
+        android:hint="@string/date" />
+
+    <EditText
+        android:id="@+id/et_description"
+        style="@style/wmatch_hmatch"
+        android:layout_weight="1"
+        android:hint="@string/description" />
+
+    <EditText
+        android:id="@+id/et_amounth"
+        style="@style/wmatch_hmatch"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:hint="@string/amounth" />
+
+    <Button
+        android:id="@+id/btn_update"
+        style="@style/wmatch_hmatch"
+        android:layout_weight="1"
+        android:text="@string/update" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        style="@style/wmatch_hmatch"
+        android:layout_weight="1"
+        android:text="@string/delete" />
+
+    <Button
+        android:id="@+id/btn_cancle"
+        style="@style/wmatch_hmatch"
+        android:layout_weight="1"
+        android:text="@string/cancel" />
+</LinearLayout>
